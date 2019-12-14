@@ -1,8 +1,21 @@
-img {
-  width: 24%;
+.contenedor {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 50px 100px 100px;
+  grid-template-areas: "header header header"
+                       "left contenido contenido"
+                       "left footer footer";
+
 }
-@media all and (max-width: 400px) {
-  img {
-    width: 60%;
-  }
+.contenedor div {
+  border: 1px solid greenyellow;
 }
+#e {
+  grid-area: footer;
+}
+/*#e {
+  background-color: rgba(255,255,0,0.5);
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}*/
